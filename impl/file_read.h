@@ -1,7 +1,7 @@
 #ifndef file_read_h
 #define file_read_h
 #include "tree.h"
-#include "debugmalloc.h"
+#include "../debugmalloc.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

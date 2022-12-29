@@ -51,16 +51,17 @@ void encode(tree *root){
         if(b[i] >= 90 && b[i] <= 122){
             b[i] = b[i]-32;
         }
-        find(b[i], root);
+        find(b[i], root->left);
+        find(b[i], root->right);
         printf(" ");
     }
     printf("\n");
 }
 
 void find(char b, tree *root){
-    if (root == NULL)
+    if (root == NULL || root->data[1] != '\0')
         return;
-    if(b == root->data[0]){
+    if(b == root->data[0]) {
         printf("%s", root->data2);
         return;
     }

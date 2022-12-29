@@ -1,7 +1,7 @@
 #ifndef decoder_tree_h
 #define decoder_tree_h
 
-#include "debugmalloc.h"
+#include "../debugmalloc.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

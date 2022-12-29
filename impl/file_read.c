@@ -26,5 +26,7 @@ tree *tread(char *file){
     fclose(f);
     free(a);
     free(b);
+    code_tree->data[0] = '\0';
+    code_tree->data2[0] = '\0';
     return code_tree;
 }

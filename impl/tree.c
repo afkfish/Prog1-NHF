@@ -13,7 +13,7 @@ tree *tree_append(tree *root, char *data, char *rdata, char *ldata, int depth){
     }
     if(data[depth] != '\0') {
         if (data[depth] == '-') {
-                root->left = tree_append(root->left, data, rdata, ldata, depth+1);
+                root->left = tree_append(root->left, data, rdata, ldata, depth + 1);
         }
         else if (data[depth] == '.') {
                 root->right = tree_append(root->right, data, rdata, ldata, depth + 1);

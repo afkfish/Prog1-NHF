@@ -1,5 +1,5 @@
-#include "decoder.h"
-#include "file_read.h"
+#include "impl/decoder.h"
+#include "impl/file_read.h"
 #include "debugmalloc.h"
 #include <string.h>
 #include <stdio.h>
@@ -21,7 +21,7 @@ int main(){
         b = 0;
         tree = tread(file);
         printf("\nParancs:");
-        scanf(" %20s", a);
+        scanf(" %19s", a);
         printf("\n");
         if(strcmp(a, "--morze") == 0) b = 1;
         else if(strcmp(a, "--ascii") == 0) b = 2;
@@ -39,7 +39,7 @@ int main(){
             break;
         case 3:
             printf("A beolvasni kívánt kódtábla helye: ");
-            scanf(" %256s", file);
+            scanf(" %255s", file);
             ftree(tree);
             if(file_test(file) == 0){
                 strcpy(file, "kodtabla.txt\0");

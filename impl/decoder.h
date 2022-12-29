@@ -3,7 +3,7 @@
 
 #include "file_read.h"
 #include "tree.h"
-#include "debugmalloc.h"
+#include "../debugmalloc.h"
 
 void decode(tree *root);
 void encode(tree *root);
